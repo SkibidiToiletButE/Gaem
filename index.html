@@ -7,12 +7,17 @@
             function OnClickMoneyButton() {
                 var Money = 0
                 var MoneyPerCLick = 1
+
+                Money += 1
+                document.GetElementById("MoneyDisplay").innerHTML = Money
             }
         </script>
     </head>
 
     <body>
-        <h1 id="moneybutton">CLick For Money</h1>
+        <h1 id="MoneyDisplay"></h1>
+        <br>
+        <br>
+        <h1 id="moneybutton" onclick="OnClickMoneyButton">Click For Money</h1>
     </body>
-
 </html>
